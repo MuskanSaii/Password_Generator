@@ -55,7 +55,7 @@ h1{
 
 .display{
     width: 100%;
-    text-transform: uppercase;
+    text-transform: none;
     color: var(--vb-yellow);
     font-weight: 600;
     font-size: 1.5rem;
@@ -75,7 +75,7 @@ h1{
     line-height:30px;
     color:var(--vb-yellow);
     opacity: 0.65;
-    text-transform: uppercase;
+    text-transform: none;
      transform: translateY(-50%); 
 }
  
@@ -286,4 +286,5 @@ h1{
     outline: 2px solid var(--vb-yellow);
     background-color: var(--dk-violet);
     box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+
   } */ 
