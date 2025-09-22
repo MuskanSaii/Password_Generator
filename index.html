@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.goolgleapis.com"/>
-    <link rel="stylesheet" href="https//fonts.gstatic.com">
-    <!-- <link rel="stylesheet" href="https://fonts.googlreapis.com/css2?family=league+spartam:wght@100;200;300;400;600&d   "> -->
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -14,7 +11,7 @@
         <h1>Password Generator</h1>
         <div class="display_container">
             <!--password display-->
-            <input readonly placeholder="password" class="display" data-passwordDisplay>
+            <input type="text" readonly placeholder="password" class="display" data-passwordDisplay>
             
             <button  class="copyBtn" data-copy>
                 <span class="tooltip" data-copyMsg></span>
@@ -32,23 +29,23 @@
                     </div>
 
                     <!--slider-->
-                    <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+                    <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider/>
 
                     <!--Checkboxes-->
                     <div class="check">
-                        <input type="checkbox" id="uppercase">
+                        <input type="checkbox" id="uppercase"/>
                         <label for="uppercase">Includes Uppercase Letters</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="lowercase">
+                        <input type="checkbox" id="lowercase"/>
                         <label for="lowercase">Includes Lowercase Letters</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="numbers">
+                        <input type="checkbox" id="numbers"/>
                         <label for="numbers">Includes Number Letters</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="symbols">
+                        <input type="checkbox" id="symbols"/>
                         <label for="symbols">Includes Symbols Letters</label>
                     </div>
                         
@@ -67,3 +64,4 @@
 </body>
 
 </html> 
+
