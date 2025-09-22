@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.goolgleapis.com"/>
+    <link rel="stylesheet" href="https//fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="https://fonts.googlreapis.com/css2?family=league+spartam:wght@100;200;300;400;600&d   "> -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display_container">
+            <!--password display-->
+            <input readonly placeholder="password" class="display" data-passwordDisplay>
+            
+            <button  class="copyBtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+
+        </div>
+
+            <div class="input_container"> 
+            
+                    <!--Password length section-->
+                    <div class="length">
+                        <p>Password length</p>
+                        <p data-lengthNumber>0</p>
+                    </div>
+
+                    <!--slider-->
+                    <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+                    <!--Checkboxes-->
+                    <div class="check">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Includes Uppercase Letters</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">Includes Lowercase Letters</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Includes Number Letters</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Includes Symbols Letters</label>
+                    </div>
+                        
+                    <div class="strength_container">
+                        <p>Strength</p>
+                        <div class="indicator" data-indicator></div>
+                    </div>
+
+                    <!--Generate password-->
+                    <button class="generateBtn">Generate password</button>
+                 </div>
+            
+        
+        </div>
+    <script src="script.js"></script>
+</body>
+</html> 
